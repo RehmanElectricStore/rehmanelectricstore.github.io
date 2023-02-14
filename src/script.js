@@ -1,11 +1,13 @@
-import "./styles.css";
+import './styles.css';
 import logo from './assets/img/logo.png';
 import search from './assets/img/search.png';
 import productImage from './assets/img/product.png';
 
 // ------ LOAD IMAGES ------ START--- //
-const logoImgDiv = document.getElementById('logo').src = logo
-const searchIcon = document.getElementById('search-icon').src = search
+const logoImgDiv = document.getElementById('logo');
+logoImgDiv.src = logo;
+const searchIcon = document.getElementById('search-icon');
+searchIcon.src = search;
 const productImages = document.querySelectorAll('.product-image');
 // ------ LOAD IMAGES ------ END--- //
 
@@ -13,14 +15,13 @@ productImages.forEach((image) => {
   image.src = productImage;
 });
 
-
 // ------ Filter Buttons Styling ------ START--- //
 // Select all buttons in the group
 const filterButtons = document.querySelectorAll('.category')
 let previousButton = document.querySelector('#filter-slider > button:first-of-type');
 
 // Add event listener to each button
-filterButtons.forEach(function (filterButton) {
+filterButtons.forEach((filterButton) => {
   filterButton.addEventListener('click', () => {
     // Remove "filter-category" class from the previously selected button
     previousButton.classList.remove('filter-category');

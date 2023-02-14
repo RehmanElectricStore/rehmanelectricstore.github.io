@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
-  font-family: Roboto;
+  font-family: 'Roboto', system, sans-serif;
 }
 
 /* Navbar */
@@ -47,7 +47,7 @@
   border-radius: 4px;
   width: 70%;
   height: 20px;
-  box-shadow: 0px 0.5px rgb(0 0 0 / 0.2);
+  box-shadow: 0 0.5px rgb(0 0 0, 0.2);
   padding: 10px;
 }
 
