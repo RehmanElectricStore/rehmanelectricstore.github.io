@@ -96,12 +96,17 @@
   color: white;
 }
 
+
+#main {
+  margin: 0 15px;
+}
+
 /* Products Grid */
 #products-grid {
   display: grid;
   grid-template-columns: auto auto;
   gap: 18px;
-  margin: 15px 18px;
+  margin: 15px 0;
 }
 
 .product {
