@@ -14,6 +14,7 @@
 #nav-items {
   list-style: none;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   padding: 0;
   margin: 15px 23px 8px 77px;
@@ -26,7 +27,7 @@
 #greeting {
   margin: 2px 0;
   font-family: 'Noto Naskh Arabic', serif;
-  font-size: 1em;
+  font-size: 16px;
   direction: rtl;
   font-weight: bolder;
 }
@@ -108,7 +109,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 220px;
+  height: 100%;
   width: 100%;
 }
 
