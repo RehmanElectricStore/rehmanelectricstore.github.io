@@ -1,32 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/earlyaccess/notonaskharabic.css");
 
 * {
-  font-family: 'Roboto', system, sans-serif;
+  font-family: "Roboto", system, sans-serif;
 }
 
 /* Navbar */
+
+#nav-bar {
+  width: 100%;
+}
+
 #nav-items {
   list-style: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0;
-  margin: 30px 28px 15px 28px;
+  margin: 15px 23px 8px 77px;
 }
 
-#nav-items > * {
-  margin: 2px 0;
-}
-
-#salam {
-  margin: 2px 0;
-  font-size: 12px;
-  font-weight: bold;
+.nav-item {
+  margin: 0 10px;
 }
 
 #greeting {
   margin: 2px 0;
-  font-size: 14px;
+  font-family: 'Noto Naskh Arabic', serif;
+  font-size: 1em;
+  direction: rtl;
   font-weight: bolder;
 }
 
@@ -39,7 +40,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 15px 20px 30px 20px;
+  margin: 8px 20px 15px 20px;
 }
 
 #search-input {
@@ -99,7 +100,7 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 18px;
-  padding: 18px;
+  margin: 15px 18px;
 }
 
 .product {
@@ -142,14 +143,14 @@
 
 #footer-menu {
   background-color: white;
-  border-top: 1px solid #AFADAD;
+  border-top: 1px solid #afadad;
   border-radius: 16px 16px 0 0;
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 70px;
+  height: 50px;
   width: 100%;
-  margin: auto;
+  margin: 8px auto;
   text-align: center;
 }
 
@@ -159,6 +160,7 @@
   justify-content: space-around;
   align-items: center;
   padding-left: 0;
+  margin: 12px 0 8px 0;
 }
 
 .footer-item {
@@ -174,4 +176,5 @@
 
 .footer-item-name {
   font-size: 10px;
+  margin: 0;
 }
