@@ -2,6 +2,7 @@ import './styles.css';
 import logo from './assets/img/logo.png';
 import search from './assets/img/search.png';
 import productImage from './assets/img/product.png';
+import home from './assets/img/home.png';
 
 // ------ LOAD IMAGES ------ START--- //
 const logoImgDiv = document.getElementById('logo');
@@ -9,10 +10,16 @@ logoImgDiv.src = logo;
 const searchIcon = document.getElementById('search-icon');
 searchIcon.src = search;
 const productImages = document.querySelectorAll('.product-image');
+const footerIcons = document.querySelectorAll('.footer-item-icon');
+footerIcons.src = footerIcons;
 // ------ LOAD IMAGES ------ END--- //
 
 productImages.forEach((image) => {
   image.src = productImage;
+});
+
+footerIcons.forEach((footerIcon) => {
+  footerIcon.src = home;
 });
 
 // ------ Filter Buttons Styling ------ START--- //

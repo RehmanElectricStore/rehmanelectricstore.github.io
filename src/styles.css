@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  margin: 30px 28px 20px 28px;
+  margin: 30px 28px 15px 28px;
 }
 
 #nav-items > * {
@@ -39,7 +39,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 20px;
+  margin: 15px 20px 30px 20px;
 }
 
 #search-input {
@@ -98,8 +98,8 @@
 #products-grid {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 10px;
-  padding: 10px;
+  gap: 18px;
+  padding: 18px;
 }
 
 .product {
@@ -138,4 +138,40 @@
 
 .product-price {
   font-weight: bolder;
+}
+
+#footer-menu {
+  background-color: white;
+  border-top: 1px solid #AFADAD;
+  border-radius: 16px 16px 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#footer-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-item-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-item-name {
+  font-size: 10px;
 }
