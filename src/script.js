@@ -20,8 +20,8 @@ const filterButtons = document.querySelectorAll('.category')
 let previousButton = document.querySelector('#filter-slider > button:first-of-type');
 
 // Add event listener to each button
-filterButtons.forEach(function(filterButton) {
-  filterButton.addEventListener('click', function() {
+filterButtons.forEach(function (filterButton) {
+  filterButton.addEventListener('click', () => {
     // Remove "filter-category" class from the previously selected button
     previousButton.classList.remove('filter-category');
     // Add "filter-category" class to the clicked button
