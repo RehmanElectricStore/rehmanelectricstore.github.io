@@ -56,7 +56,7 @@ firstButton.classList.add('filter-category');
       Products.innerHTML += `
         <div class="product">
           <div class="product-card">
-            <img class="product-image" src=${res.includes.Asset[index].fields.file.url} alt='product-icon-${index}'></img>
+            <img class="product-image" src=${product.fields.url} alt='${product.fields.productName}-image'></img>
           </div>
           <div class="product-info">
             <p class="product-name">${product.fields.productName}</p>
