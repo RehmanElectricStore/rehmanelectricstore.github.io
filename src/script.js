@@ -3,6 +3,7 @@ import logo from './assets/img/logo.png';
 import search from './assets/img/search.png';
 import productImage from './assets/img/product.png';
 import home from './assets/img/home.png';
+import getElectricItems from './modules/getElectricItems';
 
 // ------ LOAD IMAGES ------ START--- //
 const logoImgDiv = document.getElementById('logo');
@@ -43,3 +44,29 @@ filterButtons.forEach((filterButton) => {
 const firstButton = document.querySelector('#filter-slider > button:first-of-type');
 firstButton.classList.add('filter-category');
 // ------ Filter Buttons Styling ------ END--- //
+
+
+// Define an async function to get the data
+(async function() {
+  try {
+    const res = await getElectricItems();
+    const items = await res.items;
+    items.forEach((product, index) => {
+      const Products = document.querySelector('#products-grid');
+      Products.innerHTML += `
+        <div class="product">
+          <div class="product-card">
+            <img class="product-image" src=${res.includes.Asset[index].fields.file.url} alt='product-icon-${index}'></img>
+          </div>
+          <div class="product-info">
+            <p class="product-name">${product.fields.productName}</p>
+            <p class="product-price">$${product.fields.price}</p>
+          </div>
+        </div>
+      `;
+    });
+  } catch (error) {
+    console.error(error);
+  }
+})();
+

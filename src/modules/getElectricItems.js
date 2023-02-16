@@ -1,18 +1,22 @@
 import endpoint from './api.js';
 
 const getElectricItems = async () => {
-  let electricItems = null;
   try {
-    const response = await fetch(endpoint.electricstore);
-    if (response.ok) {
-      const data = await response.json();
-      electricItems = data;
-      console.log(electricItems);
+    // Fetch the data from the 'electricstore' endpoint
+    const electricstoreResponse = await fetch(endpoint.electricstore, {
+      headers: {
+        Authorization: `Bearer ${process.env.ACCESS_TOKEN}`
+      }
+    });
+    if (!electricstoreResponse.ok) {
+      throw new Error(`HTTP error! status: ${electricstoreResponse.status}`);
     }
+    const electricstoreData = await electricstoreResponse.json();
+    // console.log('Electric Store Items:', electricstoreData);
+    return electricstoreData
   } catch (error) {
-    return error.message;
+    console.error(`Error: ${error}`);
   }
-  return electricItems;
 };
 
 export default getElectricItems;
