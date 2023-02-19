@@ -139,3 +139,97 @@
 .product-price {
   font-weight: bolder;
 }
+
+
+/* Product Page Styling */
+
+.product-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  margin: 15px auto;
+  height: 95vh;
+}
+
+.image-card {
+  border-radius: 18px 18px 0 0;
+  background-color: #DDD5D5;
+  height: 350px;
+  display: flex;
+  padding: 0 30px;
+}
+
+.product-image {
+  /* width: 80%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name-n-price {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-name {
+  font-size: 22px;
+}
+
+.product-price {
+  font-size: 22px;
+  color: #F29D38;
+  text-align: justify;
+}
+
+.rating {
+  display: flex;
+  font-size: 18px;
+  width: 50%;
+}
+
+.rating-text {
+  color: #F29D38;
+  font-size: 20px;
+  display: flex;
+}
+
+.rating-stars {
+  color: #F29D38;
+  padding-left: 10px;
+}
+
+.details {
+  font-size: 16px;
+  line-height: 1.7em;
+  color: #979595;
+}
+
+.detail-heading {
+  font-size: 22px;
+}
+
+.contact-whatsapp-btn {
+  background-color: #55CD6C;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  height: 60px;
+  width: 90%;
+  margin: 20px auto;
+  color: white;
+  font-size: 26px;
+}
+
+.whatsapp-icon {
+  width: 40px;
+  height: 40px;
+}
