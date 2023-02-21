@@ -114,7 +114,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   gap: 18px;
-  margin: 15px 0;
+  margin: 15px 0 75px 0;
 }
 
 .product {
@@ -139,16 +139,31 @@ body {
   justify-content: space-between;
 }
 
-.product-name,
+.product-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
 .product-price {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
+.price {
+  color: black;
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  color: #F29D38;
+}
+
 .product-tag {
   font-size: 12px;
   margin: 0;
+  color: #979595;
 }
 
 .product-price {
