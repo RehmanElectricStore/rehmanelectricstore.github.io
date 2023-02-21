@@ -21,7 +21,7 @@ body {
   align-items: center;
   margin: 0 0 16px 0;
   padding: 16px 0 16px 0;
-  background-color: #F8F9F9;
+  background-color: #FFFF;
   box-shadow: 0 0 1px rgb(0 0 0 / 0.1);
   /* FIXED HEADER */
   position: fixed;
@@ -36,7 +36,7 @@ body {
 
 #search-input {
   border: 1px solid#FFF;
-  background-color: #FFF;
+  background-color: #F8F9F9;
   color: #979595;
   border-radius: 4px;
   width: 100%;
@@ -76,6 +76,18 @@ body {
 .featured-product-image {
   width: 95%;
   padding: 0 0 0 10px;
+}
+
+.category-page-banner {
+  margin-top: 75px;
+  background-color: #F8F9F9;
+  list-style: none;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  /* box-shadow: 1px 0 0 1px rgb(0 0 0 / 0.1); */
 }
 
 #filter-slider {
