@@ -80,8 +80,8 @@ body {
 
 #filter-slider {
   display: flex;
-  justify-content: space-evenly;
-  margin: 10px;
+  justify-content: space-between;
+  margin: 10px 16px;
 }
 
 .category {
@@ -120,35 +120,34 @@ body {
 .product {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.product-card {
-  width: 138px; /* Subtracting padding of 4px */
-  height: 184px;
   background-color: #F8F9F9;
   border-radius: 16px;
-  padding: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+  width: 100%; /* Subtracting padding of 4px */
+  height: 200px;
 }
 
 .product-image {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
 .product-info {
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product-name,
 .product-price {
-  font-size: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.product-tag {
+  font-size: 12px;
   margin: 0;
 }
 
