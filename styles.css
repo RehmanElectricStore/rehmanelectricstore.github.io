@@ -73,6 +73,29 @@ body {
   margin-top: 100px;
 }
 
+
+.contact-us {
+  width: 90%;
+  margin: auto;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* FIXED HEADER - FURTHER CODE*/
+  margin-top: 70px;
+}
+
+.contact-information-heading {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.c-heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .featured-product-image {
   width: 95%;
   padding: 0 0 0 10px;
@@ -183,7 +206,7 @@ body {
 }
 
 #footer-menu {
-  background: #F8F9F9;
+  background: #FFF;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
   border-radius: 16px 16px 0 0;
   position: fixed;
