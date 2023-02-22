@@ -2,7 +2,6 @@ import Product from './components/Product'
 import FeaturedProducts from './components/FeaturedProducts'
 import Categories from './components/Categories'
 
-
 export default function Home() {
   return (
     <div>
@@ -21,3 +20,21 @@ export default function Home() {
     </div>
   )
 }
+
+// import Product from './components/Product'
+// import FeaturedProducts from './components/FeaturedProducts'
+// import Categories from './components/Categories'
+//     <div>
+//       <FeaturedProducts />
+//       <Categories />
+//         <div id="products-grid">
+//           <Product />
+//           <Product />
+//           <Product />
+//           <Product />
+//           <Product />
+//           <Product />
+//           <Product />
+//           <Product />
+//         </div>
+//     </div>
