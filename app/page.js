@@ -1,91 +1,90 @@
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import product from '../assets/img/Product.png'
+import featuredProduct from '../assets/img/featuredProduct.png'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <div className="featured-products">
+        <Image className="featured-product-image" src={featuredProduct} alt="" />
+      </div>
+      <div>
+        <h3 style={{ paddingLeft: '20px' }}>Categories</h3>
+      </div>
+      <div id="filter-slider">
+        <button style={{ background: 'black' }} className="category">All</button>
+        <button className="category">Scissors</button>
+        <button className="category">Pearls</button>
+        <button className="category">Frill</button>
+      </div>
+      <main id="main">
+        <div id="products-grid">
+          <div className="product">
+            <Image className="product-image" src={product} alt='product-image' />
+            <div className="product-info">
+              <p className="product-name">Leather Shoes</p>
+              <p className="product-tag">Shoe</p>
+              <p className="product-price"><span className="price">$199</span><span className="discounted-price">&nbsp;$150</span></p>
+            </div>
+          </div>
+          <div className="product">
+            <Image className="product-image" src={product} alt='product-image' />
+            <div className="product-info">
+              <p className="product-name">Leather Shoes</p>
+              <p className="product-tag">Shoe</p>
+              <p className="product-price"><span className="price">$199</span><span className="discounted-price">&nbsp;$150</span></p>
+            </div>
+          </div>
+          <div className="product">
+            <Image className="product-image" src={product} alt='product-image' />
+            <div className="product-info">
+              <p className="product-name">Leather Shoes</p>
+              <p className="product-tag">Shoe</p>
+              <p className="product-price"><span className="price">$199</span><span className="discounted-price">&nbsp;$150</span></p>
+            </div>
+          </div>
+          <div className="product">
+            <Image className="product-image" src={product} alt='product-image' />
+            <div className="product-info">
+              <p className="product-name">Leather Shoes</p>
+              <p className="product-tag">Shoe</p>
+              <p className="product-price"><span className="price">$199</span><span className="discounted-price">&nbsp;$150</span></p>
+            </div>
+          </div>
+          <div className="product">
+            <Image className="product-image" src={product} alt='product-image' />
+            <div className="product-info">
+              <p className="product-name">Leather Shoes</p>
+              <p className="product-tag">Shoe</p>
+              <p className="product-price"><span className="price">$199</span><span className="discounted-price">&nbsp;$150</span></p>
+            </div>
+          </div>
+          <div className="product">
+            <Image className="product-image" src={product} alt='product-image' />
+            <div className="product-info">
+              <p className="product-name">Leather Shoes</p>
+              <p className="product-tag">Shoe</p>
+              <p className="product-price"><span className="price">$199</span><span className="discounted-price">&nbsp;$150</span></p>
+            </div>
+          </div>
+          <div className="product">
+            <Image className="product-image" src={product} alt='product-image' />
+            <div className="product-info">
+              <p className="product-name">Leather Shoes</p>
+              <p className="product-tag">Shoe</p>
+              <p className="product-price"><span className="price">$199</span><span className="discounted-price">&nbsp;$150</span></p>
+            </div>
+          </div>
+          <div className="product">
+            <Image className="product-image" src={product} alt='product-image' />
+            <div className="product-info">
+              <p className="product-name">Leather Shoes</p>
+              <p className="product-tag">Shoe</p>
+              <p className="product-price"><span className="price">$199</span><span className="discounted-price">&nbsp;$150</span></p>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </main>
+    </div>
   )
 }
